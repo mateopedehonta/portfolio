@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg {
+
+  background-image: url("/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  animation: pan 30s infinite alternate linear;
+}
+
+@keyframes pan {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+
+@media (width>=500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.bg-1 {
+  background: #141b2d;
+
+  /* background: #dfe7f0; */
+}
+.bg-2 {
+  /* background: #141b2d; */
+
+  background: #515e8b;
+}
+.bg-3 {
+  background: #222a36;
+}
+.h-100 {
+  height: 40rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Orbitron", sans-serif;
+}
+.h-inherit {
+  height: inherit;
+}
+img {
+  fill: aqua;
+}
+
+.side {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+}
+
+.fade::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+/* user agent stylesheet */
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.h-w {
+  height: -webkit-fill-available;
+}
+
+.start-button {
+  background: black;
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 50%);
+  animation: pulse 1.5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-shadow {
+  box-shadow: 1px 7px 5px -2px rgb(0 0 0 / 5%);
+}
