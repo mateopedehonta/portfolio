@@ -1,5 +1,4 @@
 export { Contact } from "./Contact";
-export { Header } from "./Header";
 export { Networks } from "./Networks";
 export { Skills } from "./Skills";
 export { Projects } from "./Projects";
