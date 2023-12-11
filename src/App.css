@@ -96,3 +96,7 @@ img {
 .nav-shadow {
   box-shadow: 1px 7px 5px -2px rgb(0 0 0 / 5%);
 }
+
+.navButton{
+  @apply px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white 
+}

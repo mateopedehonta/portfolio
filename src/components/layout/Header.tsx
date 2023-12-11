@@ -9,19 +9,20 @@ export const Header = () => {
       <header className="hidden fixed lg:flex justify-center w-screen nav-shadow bg-1">
         <nav className="flex flex-row justify-between items-center w-3/4 list-none p-2 m-2">
           <ul className="flex flex-row gap-3 w-auto items-center justify-center">
-            <li className="px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white ">
+            <li className="navButton">
               <a href="#">Inicio</a>
             </li>
-            <li className="px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white ">
-              <a href="#section-sobreMi">Sobre mi</a>
-            </li>
-            <li className="px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white ">
-              <a href="#section-habilidades">Habilidades</a>
-            </li>
-            <li className="px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white ">
+            <li className="navButton">
               <a href="#section-proyectos">Proyectos</a>
             </li>
-            <li className="px-2 py-1 hover:bg-black hover:text-white hover:rounded-md active:bg-white ">
+
+            <li className="navButton">
+              <a href="#section-habilidades">Habilidades</a>
+            </li>
+            <li className="navButton">
+              <a href="#section-sobreMi">Sobre mi</a>
+            </li>
+            <li className="navButton">
               <a href="#section-contacto">Contacto</a>
             </li>
           </ul>
