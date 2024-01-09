@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <header className="hidden fixed lg:flex justify-center w-screen nav-shadow bg-1">
         <nav className="flex flex-row justify-between items-center w-3/4 list-none p-2 m-2">
-          <ul className="flex flex-row gap-3 w-auto items-center justify-center">
+          <ul className="flex flex-row gap-3 w-auto ">
             <li className="navButton">
               <a href="#">Inicio</a>
             </li>
@@ -32,7 +32,7 @@ export const Header = () => {
               href="https://drive.google.com/file/d/1P7qLtawzzPz9T23D9NHcJczSF-Cl_Dad/view?usp=sharing"
               className="flex gap-1 items-center"
             >
-              Descargar Sv
+              Descargar Cv
               <BiDownload className="text-3xl" />
             </a>
           </li>
