@@ -1,4 +1,4 @@
-import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
+import {  BsFillEnvelopeFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
