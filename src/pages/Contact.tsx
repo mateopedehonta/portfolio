@@ -36,13 +36,13 @@ export const Contact = () => {
       <h1 className="text-4xl font-bold">Contacto</h1>
       <div className="flex flex-col lg:flex-row p-4 lg:w-4/5">
         <div className="w-max lg:w-1/2 flex justify-center">
-          <ul>
-            <li>
+          <ul className="flex flex-col gap-5">
+            {/* <li>
               <h2 className="lg:text-2xl flex gap-2">
                 <BsFillTelephoneFill /> Telefono
               </h2>
               <p className="text-2xl lg:text-3xl">2302308783</p>
-            </li>
+            </li> */}
             <li>
               <h2 className="lg:text-2xl flex gap-2">
                 <BsFillEnvelopeFill /> Email
@@ -53,7 +53,7 @@ export const Contact = () => {
               <h2 className="lg:text-2xl flex gap-2">
                 <MdLocationOn /> Ubicacion
               </h2>
-              <p className="text-2xl lg:text-3xl">General Pico - La pampa</p>
+              <p className="text-2xl lg:text-3xl">Cordoba - Argentina</p>
             </li>
           </ul>
         </div>
