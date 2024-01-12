@@ -13,7 +13,7 @@ export const ItemProyects = ({
 }: Proyect) => {
   return (
     <div className="w-full bg-1 flex flex-col  rounded-lg ">
-      <a target="_blank" className="min-h-[190px] relative text-black hover:text-blue-600" href={link}>
+      <a target="_blank" className="min-h-[190px] text-black hover:text-blue-600" href={link}>
         <FaExternalLinkAlt className="absolute right-0 m-2 " />
 
         <img className="w-full h-full " src={img} alt="" />

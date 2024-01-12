@@ -31,7 +31,7 @@ export const Contact = () => {
   return (
     <section
       id="section-contacto"
-      className="min-h-screen flex flex-col justify-center items-center gap-5"
+      className="pb-32 flex flex-col justify-center items-center gap-5"
     >
       <h1 className="text-4xl font-bold">Contacto</h1>
       <div className="flex flex-col lg:flex-row p-4 lg:w-4/5">

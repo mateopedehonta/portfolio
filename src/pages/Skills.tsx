@@ -1,11 +1,10 @@
 export const Skills = () => {
     return ( 
-        <section
-        id="section-habilidades"
-        className="min-h-screen flex flex-col justify-center items-center gap-7"
+        <div
+        className="w-full flex flex-col justify-center items-cente gap-7"
       >
-        <h1 className="text-3xl lg:text-4xl font-bold">Habilidades</h1>
-        <div className="flex flex-col lg:flex-row gap-3 w-3/4 justify-center">
+        <h1 className="text-3xl lg:text-4xl font-bold">Stack</h1>
+        <div className="flex flex-col lg:flex-row gap-3  justify-center">
           <div className="lg:w-1/4 bg-1 p-5 flex flex-col rounded-md gap-2">
             <h2 className="text-3xl text-center">FrontEnd</h2>
             <ul className="flex flex-col justify-center items-center lg:items-start gap-2">
@@ -19,7 +18,7 @@ export const Skills = () => {
           </div>
           <div className="lg:w-1/4 bg-1 p-5 flex flex-col items-center lg:items-start rounded-md gap-2">
             <h2 className="text-3xl text-center">BackEnd</h2>
-            <ul className="flex flex-col justify-center gap-2">
+            <ul className="flex flex-col justify-center lg:items-start gap-2">
               <li>NodeJs</li>
               <li>Mongojs</li>
               <li>MySQL</li>
@@ -30,7 +29,7 @@ export const Skills = () => {
           </div>
           <div className="lg:w-1/4 bg-1 p-5 flex flex-col items-center lg:items-start rounded-md gap-2">
             <h2 className="text-3xl text-center">Tools</h2>
-            <ul className="flex flex-col justify-center gap-2">
+            <ul className="flex flex-col justify-center lg:items-start gap-2">
               <li>Git</li>
               <li>GitHub</li>
               <li>Figma</li>
@@ -44,7 +43,7 @@ export const Skills = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </div>
      );
 }
  
