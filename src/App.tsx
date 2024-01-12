@@ -1,4 +1,4 @@
-import { AboutMe, Contact, Home, Networks, Projects, Skills } from "./pages";
+import { AboutMe, Contact, Home, Networks, Projects } from "./pages";
 
 import "./App.css";
 import { Header } from "./components/intex";
@@ -10,7 +10,7 @@ function App() {
       <main>
         <Home />
         <AboutMe />
-        <Skills />
+        {/* <Skills /> */}
         <Projects />
 
         <Contact />

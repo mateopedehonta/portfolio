@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@iconify/react": "^4.1.1",
     "@types/react-slick": "^0.23.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-slick": "^0.29.0",
+    "react-svg": "^16.1.32",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

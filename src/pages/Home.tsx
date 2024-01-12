@@ -21,17 +21,17 @@ export const Home = () => {
   return (
     <>
       <section className="gap-5 items-center justify-around min-h-[90vh] w-full flex">
-        <div className="flex flex-col gap-4 p-2 text-center">
+        <div className="flex flex-col gap-4 p-2 text-center lg:p-0 lg:text-start">
           <h1 className="text-4xl lg:text-5xl  font-semibold">Hola!</h1>
           <h2 className="w-full text-5xl lg:text-6xl font font-semibold  text-black">
             Soy Mateo Pedehontaa
           </h2>
           <p className="p-1 text-3xl lg:text-4xl  font-semibold">
-            FullStack Developer 
+            FullStack Developer
             <img />
           </p>
         </div>
-        <div className="w-[33%]  flex   items-center max-md:hidden ">
+        <div className="w-[33%] flex items-center max-md:hidden ">
           <Slider {...sliderSettings}>
             {proyects.map((item) => (
               <ItemProyects key={item.id} {...item} />
@@ -39,11 +39,8 @@ export const Home = () => {
           </Slider>
         </div>
       </section>
-      <div className=" w-full flex justify-center ">
-        <a
-          href="#section-proyectos"
-          className="start-button text-white "
-        >
+      <div className=" w-full flex justify-center max-lg:hidden ">
+        <a href="#section-proyectos" className="start-button text-white ">
           <FaSortDown />
         </a>
       </div>

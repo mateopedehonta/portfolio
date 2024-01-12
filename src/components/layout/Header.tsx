@@ -13,15 +13,14 @@ export const Header = () => {
               <a href="#">Inicio</a>
             </li>
             <li className="navButton">
-              <a href="#section-proyectos">Proyectos</a>
-            </li>
-
-            <li className="navButton">
-              <a href="#section-habilidades">Habilidades</a>
-            </li>
-            <li className="navButton">
               <a href="#section-sobreMi">Sobre mi</a>
             </li>
+            <li className="navButton">
+              <a href="#section-proyectos">Proyectos</a>
+            </li>
+            {/* <li className="navButton">
+              <a href="#section-habilidades">Habilidades</a>
+            </li>*/}
             <li className="navButton">
               <a href="#section-contacto">Contacto</a>
             </li>
