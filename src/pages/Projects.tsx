@@ -13,7 +13,7 @@ export const Projects = () => {
         {isLoading ? "Cargando.." : "Mis proyectos"}
       </h1>
       <div className="mx-10 h-3/4 w-2/3  grid lg:grid-cols-3 lg:grid-rows-2 gap-7">
-        {proyects.map((item) => (
+        {proyects.sort((a,b)=>parseInt(a.id) - parseInt(b.id)).map((item) => (
           <ItemProyects {...item} key={item.id} />
         ))}
       </div>
