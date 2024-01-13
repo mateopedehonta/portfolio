@@ -6,7 +6,7 @@ import { BiMessageAdd, BiDownload } from "react-icons/bi";
 export const Header = () => {
   return (
     <>
-      <header className="hidden fixed lg:flex justify-center w-screen nav-shadow bg-1">
+      <header className="hidden fixed lg:flex justify-center w-screen nav-shadow  bg-1 z-50">
         <nav className="flex flex-row justify-between items-center w-3/4 list-none p-2 m-2">
           <ul className="flex flex-row gap-3 w-auto ">
             <li className="navButton">
@@ -28,7 +28,7 @@ export const Header = () => {
           <li>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1P7qLtawzzPz9T23D9NHcJczSF-Cl_Dad/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Yw5VsMG2fXMHfGkGCCfCFh87Op_gnjkg/view?usp=sharing"
               className="flex gap-1 items-center"
             >
               Descargar Cv

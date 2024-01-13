@@ -26,7 +26,7 @@ const iconsStack = [
 
 export const AboutMe = () => {
   return (
-    <section id="section-sobreMi" className="min-h-screen flex ">
+    <section id="section-sobreMi" className=" flex ">
       <div className="hidden h-full w-1/3 lg:flex justify-center items-center self-center">
         <img className="lg:w-2/3" src="./recorte-foto-mateo.png" alt="" />
       </div>

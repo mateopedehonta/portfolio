@@ -7,7 +7,7 @@ export const Projects = () => {
   return (
     <div
       id="section-proyectos"
-      className="py-32 flex flex-col justify-center items-center gap-10"
+      className="py-20 flex flex-col justify-center items-center gap-10"
     >
       <h1 className="text-3xl lg:text-3xl font-bold text-center">
         {isLoading ? "Cargando.." : "Mis proyectos"}

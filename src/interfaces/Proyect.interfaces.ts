@@ -4,5 +4,7 @@ export interface Proyect{
   name: string;
   img: string;
   link: string;
-  stack:string
+  stack:string;
+  github:string;
+  deploy:string
 };

@@ -40,7 +40,7 @@ export const Home = () => {
         </div>
       </section>
       <div className=" w-full flex justify-center max-lg:hidden ">
-        <a href="#section-proyectos" className="start-button text-white ">
+        <a href="#section-sobreMi" className="start-button text-white ">
           <FaSortDown />
         </a>
       </div>
