@@ -1,10 +1,9 @@
-import {  BsFillEnvelopeFill } from "react-icons/bs";
+import { BsFillEnvelopeFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
 export const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e: Event) => {
@@ -31,11 +30,11 @@ export const Contact = () => {
   return (
     <section
       id="section-contacto"
-      className="pb-32 flex flex-col justify-center items-center gap-5"
+      className="pt-24 pb-32 flex flex-col justify-center items-center gap-5"
     >
       <h1 className="text-4xl font-bold">Contacto</h1>
-      <div className="flex flex-col lg:flex-row p-4 lg:w-4/5">
-        <div className="w-max lg:w-1/2 flex justify-center">
+      <div className="flex flex-col lg:flex-row p-y4 lg:w-4/5">
+        <div className=" lg:w-1/2 flex justify-center">
           <ul className="flex flex-col gap-5">
             {/* <li>
               <h2 className="lg:text-2xl flex gap-2">
@@ -47,7 +46,7 @@ export const Contact = () => {
               <h2 className="lg:text-2xl flex gap-2">
                 <BsFillEnvelopeFill /> Email
               </h2>
-              <p className="text-2xl lg:text-3xl">Mateopedehonta@gmail.com</p>
+              <p className="text-xl lg:text-3xl">Mateopedehonta@gmail.com</p>
             </li>
             <li>
               <h2 className="lg:text-2xl flex gap-2">

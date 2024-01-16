@@ -1,7 +1,7 @@
 import { AboutMe, Contact, Home, Networks, Projects } from "./pages";
 
 import "./App.css";
-import { Header } from "./components/intex";
+import { Header } from "./components";
 
 function App() {
   return (

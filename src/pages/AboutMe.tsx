@@ -46,7 +46,7 @@ export const AboutMe = () => {
             comunicación y facilidad para visualizar conceptos.
           </p>
         </div>
-        <h2 className="text-3xl font-bold">Habilidades</h2>
+        <h2 className="pt-2 text-3xl font-bold">Habilidades</h2>
         <div className="pt-2 flex flex-wrap justify-center gap-2 sm:gap-3">
           {iconsStack.map((iconName) => (
             <li className="rounded-lg bg-[#e7e0e0] p-3 list-none hover:scale-110 hover:">
