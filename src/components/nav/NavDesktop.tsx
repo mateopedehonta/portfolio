@@ -14,7 +14,7 @@ export const NavDesktop = () => {
       <li>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1Yw5VsMG2fXMHfGkGCCfCFh87Op_gnjkg/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nICWz4MWQzzUWvcuakSEmT5WJz22YN6B/view?usp=sharing"
           className="flex gap-1 items-center"
         >
           Descargar Cv
