@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title_lg {
+  font-size: 56px;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Asap";
+}
+
+.title_md {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Asap";
+}
+
+.title_sm {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Asap";
+}
+
+.title_lg {
+  font-size: 56px;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: "Inconsolata";
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: normal;
+}
+.text_md {
+  font-family: "Maven Pro";
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: normal;
+}
+.text_sm {
+  font-family: "Maven Pro";
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: normal;
+}
