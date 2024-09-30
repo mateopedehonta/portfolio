@@ -11,7 +11,10 @@ export const ProjectList = async () => {
       </div>
       <div className="grid grid-cols-3 justify-around w-[1040px] gap-[24px]">
         {projects.map((project) => (
-          <div className="w-[330px] h-[280px] bg-gray-300 rounded-xl flex flex-col p-3 gap-6">
+          <div
+            key={project.id}
+            className="w-[330px] h-[280px] bg-gray-300 rounded-xl flex flex-col p-3 gap-6"
+          >
             <Image
               src={project.images[0]}
               alt=""
