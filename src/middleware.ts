@@ -17,6 +17,7 @@ export default auth((req) => {
 
   //  if (isPublicRoute && isAuthenticated)
   // return Response.redirect(new URL('/dashboard', nextUrl));
+  console.log(!isAuthenticated, isPrivateRoute);
   if (!isAuthenticated && isPrivateRoute) {
     return Response.redirect(new URL("/", nextUrl));
   }
