@@ -13,13 +13,13 @@ export default auth((req) => {
   const { nextUrl } = req;
 
   const isAuthenticated = !!req.auth;
-   const isPrivateRoute = ['/dashboard'].includes(nextUrl.pathname);
+  const isPrivateRoute = ["/dashboard"].includes(nextUrl.pathname);
 
-//    if (isPublicRoute && isAuthenticated)
-//     return Response.redirect(new URL('/dashboard', nextUrl));
-
-   if (!isAuthenticated && isPrivateRoute)
-    return Response.redirect(new URL('/', nextUrl));
+  //  if (isPublicRoute && isAuthenticated)
+  // return Response.redirect(new URL('/dashboard', nextUrl));
+  if (!isAuthenticated && isPrivateRoute) {
+    return Response.redirect(new URL("/", nextUrl));
+  }
 });
 
 export const config = {

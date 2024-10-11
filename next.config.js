@@ -8,7 +8,7 @@ const nextConfig = {
   images: {
     // domains: ['res.cloudinary.com'],
     unoptimized: true,
-    formats:['image/webp','image/avif'],
+    formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     remotePatterns: [
       {
@@ -17,9 +17,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental:{
-    missingSuspenseWithCSRBailout:false
-  }
 };
 
 module.exports = nextConfig;
