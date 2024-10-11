@@ -5,12 +5,9 @@ import { AuthError } from "next-auth";
 
 import { signIn } from "@/auth";
 import { LoginSchema } from "@/schemas/loginSchema";
-import { getUserFromDb } from "@/utils/db";
+import prisma, { getUserFromDb } from "@/utils/db";
 
-
-export const login = async (
-  values: z.infer<typeof LoginSchema>,
-) => {
+export const login = async (values: z.infer<typeof LoginSchema>) => {
   const validatedFields = LoginSchema.safeParse(values);
 
   if (!validatedFields.success) {
@@ -29,7 +26,7 @@ export const login = async (
     await signIn("credentials", {
       email,
       password,
-      redirectTo: '/dashboard',
+      redirectTo: "/dashboard",
     });
   } catch (error) {
     if (error instanceof AuthError) {
