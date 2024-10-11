@@ -5,7 +5,7 @@ import { AuthError } from "next-auth";
 
 import { signIn } from "@/auth";
 import { LoginSchema } from "@/schemas/loginSchema";
-import prisma, { getUserFromDb } from "@/utils/db";
+import { getUserFromDb } from "@/utils/db";
 
 export const login = async (values: z.infer<typeof LoginSchema>) => {
   const validatedFields = LoginSchema.safeParse(values);
