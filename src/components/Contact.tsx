@@ -32,10 +32,34 @@ export const Contact = () => {
         </p>
       </div>
       <div className="flex flex-col gap-6 ">
-        <SocialLink icon={<LinkedinLogo size={32} />} label="Linkedin" />
-        <SocialLink icon={<InstagramLogo size={32} />} label="Instagram" />
-        <SocialLink icon={<GithubLogo size={32} />} label="GitHub" />
-        <SocialLink icon={<EnvelopeSimple size={32} />} label="E-mail" />
+        <a
+          href="https://www.linkedin.com/in/mateo-pedehontaa/"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <SocialLink icon={<LinkedinLogo size={32} />} label="Linkedin" />
+        </a>
+        <a
+          href="https://www.instagram.com/mateo.pedehontaa/"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <SocialLink icon={<InstagramLogo size={32} />} label="Instagram" />
+        </a>
+        <a
+          href="https://github.com/mateodev1"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <SocialLink icon={<GithubLogo size={32} />} label="GitHub" />
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=mateopedehonta@gmail.com"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <SocialLink icon={<EnvelopeSimple size={32} />} label="E-mail" />
+        </a>
       </div>
     </div>
   );

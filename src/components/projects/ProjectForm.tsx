@@ -48,8 +48,8 @@ export const ProjectForm = () => {
   };
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-        <div className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-96">
+        <div className="space-y-4 w-full ">
           <FormField
             control={form.control}
             name="title"
@@ -105,7 +105,7 @@ export const ProjectForm = () => {
               </FormItem>
             )}
           />
-          <div>
+          <div className="space-y-2">
             <Label className="font-bold text-lg"> Imagenes</Label>
             {imagesField.fields.map((field, index) => (
               <FormField
@@ -115,17 +115,21 @@ export const ProjectForm = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>{index + 1} url de imagen</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <Button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        imagesField.remove(index);
-                      }}
-                    >
-                      Eliminar
-                    </Button>
+                    <div className="flex gap-5">
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <Button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          imagesField.remove(index);
+                        }}
+                        variant={"destructive"}
+                        className="text-black"
+                      >
+                        Eliminar
+                      </Button>
+                    </div>
                   </FormItem>
                 )}
               />
@@ -135,11 +139,12 @@ export const ProjectForm = () => {
                 e.preventDefault();
                 imagesField.append({ url: "" });
               }}
+              variant={"default"}
             >
-              Add Image
+              Agregar Imagen
             </Button>
           </div>
-          <div>
+          <div className="space-y-2">
             <Label className="font-bold text-lg"> tecnologias</Label>
             {techField.fields.map((field, index) => (
               <FormField
@@ -148,18 +153,22 @@ export const ProjectForm = () => {
                 name={`technologies.${index}.name`}
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{index + 1} url de imagen</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <Button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        techField.remove(index);
-                      }}
-                    >
-                      Eliminar
-                    </Button>
+                    <FormLabel>Tecnologia {index + 1} </FormLabel>
+                    <div className="flex gap-5">
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <Button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          techField.remove(index);
+                        }}
+                        variant={"destructive"}
+                        className="text-black"
+                      >
+                        Eliminar
+                      </Button>
+                    </div>
                   </FormItem>
                 )}
               />
@@ -170,13 +179,17 @@ export const ProjectForm = () => {
                 techField.append({ name: "" });
               }}
             >
-              agregar tecnologia
+              Agregar tecnologia
             </Button>
           </div>
         </div>
 
-        <Button disabled={isPending} type="submit" className="w-full">
-          Agregar
+        <Button
+          disabled={isPending}
+          type="submit"
+          className="mt-5 w-full bg-[#4BB543] text-black"
+        >
+          Crear Proyecto
         </Button>
       </form>
     </Form>

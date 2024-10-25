@@ -13,7 +13,6 @@ export const addProject = async (data: z.infer<typeof ProjectFormSchema>) => {
         technologies: data.technologies.map((i) => i.name),
       },
     });
-    console.log(project);
     return project;
   } catch (error) {
     console.log(error);
