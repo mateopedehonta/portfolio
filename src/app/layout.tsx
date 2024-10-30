@@ -14,11 +14,11 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className="w-screen min-h-screen flex flex-col items-center bg-[#16181D]">
+      <body className="w-screen min-h-screen flex flex-col items-center bg-[#16181D] px-5 md:p-0">
         <main className="flex justify-center items-center w-full flex-col">
           <QueryClientProvider client={queryClient}>
             {children}
-            <ReactQueryDevtools initialIsOpen={false} />
+            {/* <ReactQueryDevtools initialIsOpen={false} /> */}
           </QueryClientProvider>
         </main>
 

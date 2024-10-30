@@ -9,10 +9,11 @@ export const ProjectList = async () => {
         <p className="text-red subtitle">Mis trabajos</p>
         <h2 className="text-gray-600 tilte_md">Ver proyectos destacados</h2>
       </div>
-      <div className="grid grid-cols-3 justify-around w-[1040px] gap-[24px]">
-        {projects.map((project) => (
-          <ProyectItem key={project.id} {...project} />
-        ))}
+      <div className="grid grid-cols-1 py-10 md:py-0  md:grid-cols-3 justify-around md:w-[1040px] gap-[24px]">
+        {projects &&
+          projects.map((project) => (
+            <ProyectItem key={project.id} {...project} />
+          ))}
       </div>
     </div>
   );
